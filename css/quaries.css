@@ -1,0 +1,79 @@
+  /* MEDIA QUERIES  */
+
+  /* DEVICES FOR SIZE UPTO 0PX TO 800PX  */
+
+  @media (min-width:0px) and (max-width:800px){
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    .uni-block-pic{
+      margin-top: 50px;
+    }
+
+    .carousel-item{
+      width: 121px;
+      height: auto;
+      
+    }
+
+    .principal_heading{
+      display: block;
+      text-align: center;
+      font-size: 35px;
+    }
+
+    .matter{
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom:25px;
+      
+    }
+
+    .principal_image{
+      float: none;
+      margin-top:10px;
+    }
+
+    .button-container{
+      height: 10vh;
+    }
+    .button{
+      font-size: 18px;
+      padding: 10px 10px;
+    }
+
+
+
+
+    .heading-1{
+      margin-left:0px;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .college-pic{
+      height: 150px;
+      float: none;
+      margin-bottom:15px;
+    }
+
+    .para{
+      width:100%;
+      margin-left: 0px;
+      text-align: center;
+    }
+
+    
+
+    .clg-name{
+      margin: 0px;
+    }
+  }
+
+
+
+

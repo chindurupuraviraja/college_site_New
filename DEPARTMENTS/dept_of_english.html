@@ -1,0 +1,571 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    * {
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+  
+    .dept-pics {
+      height: 200px;
+      width: auto;
+      padding-left: 55%;
+      margin-bottom: 5%;
+      padding-right: 0px;
+      margin-right: 0px;
+    }
+  
+    .dept-heading {
+      margin-left: 30%;
+      margin-bottom: 5%;
+      margin-top: 2%;
+      font-weight: bolder;
+  
+    }
+  
+    .eng-dept-text {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  
+    .card{
+      width: 300px;
+      margin-bottom: 20px;
+
+    }
+
+    .card-img-top {
+    height: 350px;
+    width: auto;
+    object-fit: cover;
+  }
+
+    
+  @media (max-width:800px){
+    .dept-heading{
+      margin-left: 20%;
+    }
+  }
+  </style>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UPGCS - University Post Graduate College Secunderabad</title>
+
+  <!--google fonts link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lexend:wght@300&family=Open+Sans:wght@300&family=Raleway&family=Roboto+Slab:wght@300&family=Roboto:wght@300&family=Space+Grotesk&family=Titillium+Web&display=swap"
+    rel="stylesheet" />
+  <!-- external css link -->
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="css/quaries.css" />
+
+  <!-- bootstrap css  link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <header>
+    <!-- nav bar  -->
+    <nav class="navbar navbar-expand-lg navbar fixed-top nav">
+      <img class="navbar-logo" src="../pics/college-logo.jpeg" alt="My image" />
+
+      <!-- <div class="container-fluid "> -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link links" aria-current="page" href="../index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="../ABOUT_US/university_profile.html">University Profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../ABOUT_US/college_profile.html">College Profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../ABOUT_US/vision_mission.html">Vision & Mission</a>
+              </li>
+
+              <!-- <li><a class="dropdown-item" href="#">Principal's Message</a></li> -->
+              <li>
+                <a class="dropdown-item" href="#">Important Visitors</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Distinguished Alumni</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="../ABOUT_US/administrative_structure.html">Administrative Structure</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              Admissions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="../ADMISSIONS/courses_offered.html">Courses Offered</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../ADMISSIONS/procedure_for_admission.html">Procedure for Admissions</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../ADMISSIONS/eligibility_for_admission.html">Eligibility for Admissions</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../ADMISSIONS/fee_structure.html">Fee Structure</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../ADMISSIONS/reservations.html">Reservations</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../ADMISSIONS/scholarships.html">Scholarships</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../ADMISSIONS/rules.html">Rules</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              Departments
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="dept_of_english.html">Department of English</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="dept_of_economics.html">Department of Economics</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="dept_of_history.html">Department of History</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="dept_of_public_ad.html">Department of Public Administration</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="dept_of_commerce.html">Department of Commerce</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="dept_of_political_science.html">Department of Political Science</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="dept_of_maths.html">Department of Maths</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="dept_of_chemistry.html">Department of Chemistry</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="dept_of_physics.html">Department of Physics</a>
+              </li>
+             <li> <a class="dropdown-item" href="../DEPARTMENTS/dept_of_computer_science.html">Department of Computer Science</a>
+</li>
+
+
+<li> <a class="dropdown-item" href="../DEPARTMENTS/dept_of_socialwork.html">Department of Social Work</a>
+</li>
+              <li>
+                <a class="dropdown-item" href="dept_of_others.html">Other Languages</a>
+              </li>
+            </ul>
+          </li>
+
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              Examination Branch
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="../EXAMINATION_BRANCH/academic_head.html">Incharge/Academic heads</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Notifications</a></li>
+              <li><a class="dropdown-item" href="#">TimeTable</a></li>
+            </ul>
+          </li>
+
+         
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            data-bs-auto-close="outside" aria-expanded="false">
+            Facilities
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            <li><a class="dropdown-item" href="#">ICC(Internal Complaints Committee)</a></li>
+            <li><a class="dropdown-item" href="#"> IQAC &raquo;</a>
+              <ul class="dropdown-menu submenu">
+                <li><a class="dropdown-item" href="#">About IQAC</a>
+                <li><a class="dropdown-item" href="#">Members</a>
+                <li><a class="dropdown-item" href="#">Activities</a>
+                <li><a class="dropdown-item" href="#">NAAC</a>
+
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="../FACILITIES/women_empowerment.html">Women Empowerment Cell</a></li>
+            <li><a class="dropdown-item" href="../FACILITIES/physical_education.html">Physical Education</a></li>
+
+            <li><a class="dropdown-item" href="../FACILITIES/library.html">Library</a></li>
+            <li><a class="dropdown-item" href="#">Placement Cell</a></li>
+            <li><a class="dropdown-item" href="../FACILITIES/health_centre.html">Health Centre</a></li>
+            <li><a class="dropdown-item" href="../FACILITIES/ncc.html">NCC </a></li>
+            <li><a class="dropdown-item" href="../FACILITIES/nss.html">NSS </a></li>
+           
+
+          </ul>
+        </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              PG Hostel
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Notices</a></li>
+              <li>
+                <a class="dropdown-item" href="../HOSTEL/gnana-gangotri-hostel.html">Gnana Gangotri Hostel (Boys)</a>
+              </li>
+              <li><a class="dropdown-item" href="../HOSTEL/CHW4(girls).html">CHW4(Girls)</a></li>
+              <li><a class="dropdown-item" href="#">Rules</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link Important-contact" aria-current="page" href="../CONTACT_US/important_numbers.html">ContactUs</a>
+          </li>
+        </ul>
+      </div>
+      <!-- </div> -->
+    </nav>
+
+    <div class="ou-head container-fluid">
+      <img src="../pics/uni-block-pic.png" class="uni-block-pic" alt="pic" />
+    </div>
+    <!-- <div class="container-fluid"> -->
+
+    <!-- </div> -->
+  </header>
+</head>
+
+<body>
+
+
+
+<h1 class="dept-heading">DEPARTMENT OF ENGLISH</h1>
+
+
+<div class="container">
+  <div class="row ">
+    <div class="col-lg-4 col-md-6 col-sm-6 ">
+      <div class="card" >
+        <img src="../pics/eng-mrudala-pic.png" class="card-img-top" alt="Profile Image">
+        <div class="card-body">
+          <h5 class="card-title"><strong><em> Dr Mrudula Lakkaraju</em></strong> </h5>
+          <p class="card-text"><h5> MA, PGDES, PhD</h5>
+            <h5> Assistant Professor & I/C Head</h5>
+            <h5> 09948243345</h5>
+            <h5>dr.mrudulalakkaraju@gmail.com</h5></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ----- -->
+    <div class="col-lg-4 col-md-6 ">
+      <div class="card">
+        <img src="../pics/eng-srinivas-pic.png" class="card-img-top" style="max-width: 350px;" alt="Profile Image">
+        <div class="card-body">
+          <h5 class="card-title" ><strong><em>Mr A Srinivas</em></strong>  </h5>
+          <p class="card-text">
+            <h5> MA, PGCTE, PGDTE, CSS, (PhD) </h5>
+            <h5> Assistant Professor (C)</h5>
+            <h5>9849940460</h5>
+            <h5> sriniambati6@gmail.com</h5></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card">
+        <img src="../pics/eng-arun-pic.png" class="card-img-top" style="max-width: 350px;" alt="Profile Image">
+        <div class="card-body">
+          <h5 class="card-title"><strong><em>Dr T Arun Kumar</em></strong>  </h5>
+          <p class="card-text"> 
+            <h5> MA, MPhil, PhD, SET </h5>
+            <h5> Assistant Professor (C)</h5>
+            <h5>9959595663</h5>
+            <h5> sriniambati6@gmail.com</h5></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card">
+        <img src="../pics/eng-kiran-pic.png" class="card-img-top" alt="Profile Image">
+        <div class="card-body">
+          <h5 class="card-title"><strong><em>Dr K Kiran</em></strong>  </h5>
+          <p class="card-text">
+            <h5> MA, BEd, PhD, SET </h5>
+            <h5> Assistant Professor (C)</h5>
+            <h5>9966845507 </h5>
+            <h5> kiran.kumar284@gmail.com</h5></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card">
+        <img src="../pics/eng-samuel-pic.png" class="card-img-top" alt="Profile Image">
+        <div class="card-body">
+          <h5 class="card-title"><strong><em> Mr M Samuel</em></strong> </h5>
+          <p class="card-text">
+            <h5> MA, (PhD), NET </h5>
+            <h5> Part Time Lecturer</h5>
+            <h5> 8125281453 </h5>
+            <h5> samj19113@gmail.com</h5></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card">
+        <img src="../pics/eng-srujana-pic.png" class="card-img-top" alt="Profile Image">
+        <div class="card-body">
+          <h5 class="card-title"><strong><em> Ms K Srujana</em></strong></h5>
+          <p class="card-text">
+            <h5> MA, PGDELT, SET </h5>
+            <h5> Part Time Lecturer</h5>
+            <h5> 6304285087 </h5>
+            <h5> Srujana1940@gmail.com</h5></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card">
+        <img src="../pics/eng-momatha-pic.png" class="card-img-top" alt="Profile Image">
+        <div class="card-body">
+          <h5 class="card-title"><strong><em>Ms. T. Mamatha</em></strong> </h5>
+          <p class="card-text">
+            <h5> MA </h5>
+            <h5> Assistant Professor (C)</h5>
+            <h5> 9849883456</h5></p>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+</script>
+</body>
+
+<div class="container-fluid">
+<footer class="text-center text-lg-start text-muted">
+<!-- Section: Links  -->
+<section class="footer-text">
+  <!-- <div class="container text-center text-md-start mt-5"> -->
+  <!-- Grid row -->
+  <div class="row mt-0 ga">
+    <!-- Grid column -->
+
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+      <!-- Content -->
+      <img class="img" src="../pics/college-logo.jpeg" alt="My image" />
+      <p class="clg-name">
+        University Post Graduate College, Secunderabad
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      <!-- Links -->
+
+      <h6 class="text-uppercase fw-bold mb-4">Important links</h6>
+      <p>
+        <a
+          href="https://www.osmania.ac.in/"
+          target="_blank"
+          class="text-reset-one"
+          >Osmania University</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.nizamcollege.ac.in/"
+          target="_blank"
+          class="text-reset-one"
+          >Nizam Collage</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.oucwkoti.ac.in/"
+          target="_blank"
+          class="text-reset-one"
+          >University Collage for women</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.srcicssr.org/"
+          target="_blank"
+          class="text-reset-one"
+          >ICSSR-SRC</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.ugc.gov.in/"
+          target="_blank"
+          class="text-reset-one"
+          >UGC</a
+        >
+      </p>
+
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      <!-- Links -->
+      <h6 class="text-uppercase fw-bold mb-4">Important links</h6>
+      <p>
+        <a
+          href="https://www.osmania.ac.in/"
+          target="_blank"
+          class="text-reset-one"
+          >Osmania University</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.nizamcollege.ac.in/"
+          target="_blank"
+          class="text-reset-one"
+          >Nizam Collage</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.oucwkoti.ac.in/"
+          target="_blank"
+          class="text-reset-one"
+          >University Collage for women</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.srcicssr.org/"
+          target="_blank"
+          class="text-reset-one"
+          >ICSSR-SRC</a
+        >
+      </p>
+      <p>
+        <a
+          href="https://www.ugc.gov.in/"
+          target="_blank"
+          class="text-reset-one"
+          >UGC</a
+        >
+      </p>
+
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-reset-one">
+      <!-- Links -->
+      <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+<p class="para-text">
+        <ion-icon name="location-outline"></ion-icon>
+        University Post Graduate College, Sardar Patel Road,<a
+          style="color: white; text-decoration: none"
+          href="https://goo.gl/maps/ZMVppAURsDqnNTui6"
+          target="_blank"
+        >
+          Google Maps Location -HERE</a
+        >
+      </p>
+      <p>Secunderabad - 500003,</p>
+      <p>Telangana, India</p>
+      <p>
+        <ion-icon name="call-outline"></ion-icon>
+
+        +91 040 2790 2169
+      </p>
+      <p>
+        <ion-icon name="mail-open-outline"></ion-icon>
+        oupgcs@gmail.com
+      </p>
+    </div>
+
+    <!-- Grid column -->
+  </div>
+
+  <!-- Grid row -->
+  <!-- </div> -->
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="p-4 Copyright-text">
+  Copyright © 2017-2021 Osmania University. All Rights Reserved
+</div>
+<!-- Copyright -->
+
+<!-- Footer -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</footer>
+</div>
+
+</html>
